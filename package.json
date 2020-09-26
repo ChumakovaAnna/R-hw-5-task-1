@@ -16,6 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d dist",
     "test": "exit 0",
     "eject": "react-scripts eject"
   },
