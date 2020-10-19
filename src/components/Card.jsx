@@ -2,13 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 Card.propTypes = {
-  children: PropTypes.array.isRequired,
+  // children: PropTypes.array.isRequired,
 };
 
 function Card(props) {
   return (
     <div className="card">
-      {props.children}
+      <div className="card-body">
+        <h5 className="card-title">{props.title}</h5>
+          {props.children}
+        <p className="card-text">{props.text}</p>
+        <a href={props.link} className="btn btn-primary">Go somewhere</a>
+      </div>
     </div>
   );
 }
