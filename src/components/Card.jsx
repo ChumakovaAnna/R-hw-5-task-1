@@ -2,7 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 Card.propTypes = {
-  // children: PropTypes.array.isRequired,
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  children: PropTypes.object,
 };
 
 function Card(props) {
